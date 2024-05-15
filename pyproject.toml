@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=65.5.1"]  # PEP 518 specifications
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "example_package"
+authors = [{name = "Brandon Meek"}]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas~=2.2.2",
+    "scikit-learn~=1.4.2",
+    "numpy~=1.26.4",
+    "joblib~=1.4.2"
+]
+version = "2024.05.3"
+
+[project.optional-dependencies]
+test = [
+    "pytest~=8.2.0"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
