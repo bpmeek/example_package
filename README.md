@@ -5,6 +5,12 @@
 This code is meant to serve as an example of developing a pip-installable machine learning library that can be used for 
 real-time inference by a deployed python package or another interoperable language.
 
+This package demonstrates an ability to:
+* Save model weights and include them in the python package for use after installation
+* Use test driven development (TDD) to avoid scope creep and keep functions simple and maintainable
+* Use node/pipeline architecture to simplify code execution when in production
+* Use configs to handle variables that are likely to change over time for ease of finding and maintaining
+* Design and implement a one-hot-encoding system that is reproducible even when specific categorical features are not present
 
 ## How to use
 
